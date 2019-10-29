@@ -1,10 +1,11 @@
+/* @jsx jsx */
 import { jsx } from "./jsx";
 import { Component, ConfigOptions } from "panel";
 
 interface MyAppState {}
 interface MyAppAttrs {}
 
-class MyApp extends Component<MyAppState, {}, unknown, MyAppAttrs> {
+export class MyApp extends Component<MyAppState, {}, unknown, MyAppAttrs> {
   static get attrsSchema() {
     return {
       ...super.attrsSchema
